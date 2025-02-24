@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+.list-style {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .list-style li {
+    background: #222;
+    color: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .ingredient-list li::before {
+    content: "🍽️"; 
+    margin-right: 10px;
+  }
+  .instruction-list li::before {
+    content: "🍳"; 
+    margin-right: 10px;
+  }
+  @media (max-width: 480px) {
+    .recipe-img{
+        width: 300px;
+    }
+  }
