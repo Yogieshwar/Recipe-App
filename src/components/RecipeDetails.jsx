@@ -42,11 +42,14 @@ const RecipeDetails = () => {
               className="img-top border rounded recipe-img"
             />
           </div>
-          <div className="col-12 col-sm-12 col-md-6 col-lg-6 text-center d-flex justify-content-center flex-column mt-4">
-            <h3>Name:&nbsp;{details.name}</h3>
-            <p>Meal Type:&nbsp;{details.mealType}</p>
-            <p>Cook Time:&nbsp;{details.cookTimeMinutes}</p>
-            <h5 className="text-warning">Rating:&nbsp;{details.rating}</h5>
+          <div className="col-12 col-sm-12 col-md-6 col-lg-6 text-center d-flex justify-content-center flex-column mt-4 ">
+            <h3 className="text-start">Name:&nbsp;{details.name}</h3>
+            <p className="text-start">Meal Type:&nbsp;{details.mealType}</p>
+            <p className="text-start">Cook Time:&nbsp;{details.cookTimeMinutes}</p>
+            <h5 className="text-start text-warning">Rating:&nbsp;{details.rating}&nbsp;⭐</h5>
+            <p className="text-start">Reviwes:&nbsp;{details.reviewCount}</p>
+            <p className="text-start">Serving :&nbsp;{details.servings}</p>
+
           </div>
         </div>
         <div className="row my-5 ">

@@ -28,6 +28,29 @@ body{
     content: "🍳"; 
     margin-right: 10px;
   }
+  .suggestions-container {
+    max-height: 200px;  /* Set max height */
+    overflow-y: auto;   /* Enable vertical scrolling */
+  }
+  .suggestions-container::-webkit-scrollbar {
+    width: 8px; /* Scrollbar width */
+  }
+  .suggestions-container::-webkit-scrollbar-track {
+    background: #222; /* Track color */
+    border-radius: 10px;
+  }
+  
+  .suggestions-container::-webkit-scrollbar-thumb {
+    background: #e9efea; /* Scroll thumb color (Green) */
+    border-radius: 10px;
+  }
+  
+  .suggestions-container::-webkit-scrollbar-thumb:hover {
+    background: #218838; /* Darker Green on Hover */
+  } 
+  .suggestions-container li{
+    text-decoration: none;
+  } 
   @media (max-width: 480px) {
     .recipe-img{
         width: 300px;

@@ -50,7 +50,7 @@ const RecipeApp = () => {
                 color:"white"
               }}
             />
-            <ul className="list-group mt-2">
+            <ul className="list-group mt-2 suggestions-container">
                 {suggestions.map((recipe)=>(
                    <NavLink to={`/${recipe.id}` } key={recipe.id}>
                               <li  className="list-group-item bg-dark text-light border-0 cursor-pointer">{recipe.name}</li> 
